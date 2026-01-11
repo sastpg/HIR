@@ -2,7 +2,7 @@
 <h2>Replay Failures as Successes:<br>Sample-Efficient Reinforcement Learning for Instruction Following</h2>
 
 <!-- TODO:  Thread,Paper,Dataset,Weights-->
-[![Paper](https://img.shields.io/badge/paper-5f16a8?style=for-the-badge&logo=arxiv&logoColor=white)]()
+[![Paper](https://img.shields.io/badge/paper-5f16a8?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.23457)
 [![Dataset](https://img.shields.io/badge/Datasets-4d8cd8?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/datasets/sastpg/HIR-16K)
 </div>
 
