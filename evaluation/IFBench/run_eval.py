@@ -91,3 +91,24 @@ Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcemen
 Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search
 First Draft, Then Refine: Online Experience Drives Effective Exploration in Reinforcement Learning for LLMs
 
+Experience is the Best Teacher: Motivating Effective Exploration in Reinforcement Learning for LLMs
+Experience is the Best Teacher: Online Experience drives effective exploration in Reinforcement Learning for LLMs
+
+
+# 论文 Story
+## 第一段：从大模型->RLVR范式
+1. LLM现在很厉害，在数学分析、代码编程、机器人控制等等都展现了很强的能力
+2. Deepseek-R1及其后续工作表明仅仅通过RLVR就可以大幅提升模型的推理能力
+
+## 第二段：RLVR->rubrics
+1. 尽管RLVR取得了很好的进展，但是在open-ended的task上仍然困难，因为没有明确规则的可验证答案
+2. 因此非常近期有研究使用rubrics作为评分标准，使用LLM-as-a-Judge范式打分进行RL训练
+
+## 第三段：讲探索问题
+1. 但是现有的范式仍然存在探索难的问题，一些工作比如FR3E，TreeRL依靠entropy或者树搜索，但是还是需要大量rollout不高效的探索
+2. Intro开头的奖励假说，RL优化实际上可以被视为引导策略朝着由奖励空间定义的理想分布方向优化，表明有效的探索应该朝着奖励期望的行为努力，而不是entropy那样胡乱探索
+3. 幸运的是，最近rubric-based reward范式使得奖励的语言描述成为可能，那么，关键问题就是如何利用好此类反馈来指导有效探索（让努力和目标一致），而不是在采样时依赖低效的多轮试错。
+
+
+## 第四段：介绍我们的方法
+1. 我们提出了HeRL，具体是咋做的，有什么好处（参考摘要）， LLMs能够从初始生成和奖励的事后经验中学习
